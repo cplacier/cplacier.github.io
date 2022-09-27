@@ -12,7 +12,7 @@
         <p>Given name : <xsl:value-of select="foaf:givenname"/></p>
         <p>Family name : <xsl:value-of select="foaf:family_name"/></p>
         <ul>
-          <xsl:for-each select="knows">
+          <xsl:for-each select="foaf:knows">
             <li><a><xsl:value-of select="rdfs:seeAlso"/></a></li>
           </xsl:for-each>
         </ul>
