@@ -10,7 +10,12 @@
       <body>
         <h3><xsl:value-of select="foaf:title"/> <xsl:value-of select="foaf:name"/></h3>
         <p>Given name : <xsl:value-of select="foaf:givenname"/></p>
-        <p>Family name : <xsl:value-of select="foaf:family_nname"/></p>
+        <p>Family name : <xsl:value-of select="foaf:family_name"/></p>
+        <ul>
+          <xsl:for-each select="knows">
+            <li><a><xsl:value-of select="rdfs:seeAlso"/></a></li>
+          </xsl:for-each>
+        </ul>
       </body>
     </html>
   </xsl:template>

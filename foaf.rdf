@@ -25,7 +25,7 @@
             </foaf:Person>
             <foaf:Person>
                 <foaf:name>William Dorion</foaf:name>
-                <rdfs:seeAlso rdf:resource="https://willeme80.github.io/foaf.rds"/>
+                <rdfs:seeAlso rdf:resource="https://willeme80.github.io/foaf.rdf"/>
             </foaf:Person>
             <foaf:Person>
                 <foaf:name>Maxime Leriche</foaf:name>
