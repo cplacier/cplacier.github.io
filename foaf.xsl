@@ -9,6 +9,7 @@
   <xsl:template match="/">
     <html>
       <body>
+        <h2>Bonjour</h2>
         <ol>
           <xsl:apply-templates select="/rdf:RDF/univ:Personne" />
         </ol>
