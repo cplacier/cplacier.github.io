@@ -13,7 +13,7 @@
           <xsl:apply-templates select="/rdf:RDF/Personne" />
         </ol>
         <p>Name <xsl:value-of select="/Person/name"/></p>
-        <p>Age <xsl:value-of select="/RDF/Persone/givenname"/></p>
+        <p>Given name <xsl:value-of select="/RDF/Persone/givenname"/></p>
         <p>Title <xsl:value-of select="/rdf:RDF/Personne/title"/></p>
       </body>
     </html>
