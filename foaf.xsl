@@ -13,16 +13,12 @@
         <ol>
           <xsl:apply-templates select="/rdf:RDF/univ:Personne" />
         </ol>
+        <li>
+          Name <xsl:value-of select="univ:name"/>
+          Age <xsl:value-of select="univ:givenname"/>
+          Title <xsl:value-of select="univ:title"/>
+        </li>
       </body>
     </html>
-  </xsl:template>
-
-  <xsl:template match="univ:Personne">
-    <li>
-      Name <xsl:value-of select="univ:name"/>
-      Age <xsl:value-of select="univ:givenname"/>
-      Title <xsl:value-of select="univ:title"/>
-      Title <xsl:value-of select="univ:title"/>
-    </li>
   </xsl:template>
 </xsl:stylesheet>
