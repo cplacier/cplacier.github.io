@@ -10,11 +10,11 @@
       <body>
         <h2>Homepage</h2>
         <ol>
-          <xsl:apply-templates select="/rdf:RDF/Person" />
+          <xsl:apply-templates select="rdf:RDF/Person" />
         </ol>
-        <p>Name <xsl:value-of select="/Person/name"/></p>
-        <p>Given name <xsl:value-of select="/RDF/Person/givenname"/></p>
-        <p>Title <xsl:value-of select="/rdf:RDF/Person/title"/></p>
+        <p>Name <xsl:value-of select="rdf:RDF/foaf:Person/foaf:name"/></p>
+        <p>Given name <xsl:value-of select="rdf:RDF/foaf:Person/foaf:givenname"/></p>
+        <p>Title <xsl:value-of select="rdf:RDF/foaf:Person/foaf:title"/></p>
       </body>
     </html>
   </xsl:template>
