@@ -8,9 +8,9 @@
   <xsl:template match="rdf:RDF/foaf:Person">
     <html>
       <body>
-        <h3><xsl:value-of select="foaf:title"/> <xsl:value-of select="foaf:givenname"/></h3>
-        <p>Name : <xsl:value-of select="foaf:name"/></p>
-        <p>Homeage : <xsl:value-of select="foaf:homepage"/></p>
+        <h3><xsl:value-of select="foaf:title"/> <xsl:value-of select="foaf:name"/></h3>
+        <p>Given name : <xsl:value-of select="foaf:givenname"/></p>
+        <p>Family name : <xsl:value-of select="foaf:family_nname"/></p>
       </body>
     </html>
   </xsl:template>
