@@ -8,13 +8,13 @@
   <xsl:template match="/">
     <html>
       <body>
-        <h2>Bonjour</h2>
+        <h2>Homepage</h2>
         <ol>
           <xsl:apply-templates select="/rdf:RDF/Personne" />
         </ol>
         <li>
-          Name <xsl:value-of select="name"/>
-          Age <xsl:value-of select="givenname"/>
+          Name <xsl:value-of select="/Person/name"/>
+          Age <xsl:value-of select="/RDF/Persone/givenname"/>
           Title <xsl:value-of select="title"/>
         </li>
       </body>
