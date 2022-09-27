@@ -14,7 +14,7 @@
         </ol>
         <p>Name <xsl:value-of select="/foaf:Person/foaf:name"/></p>
         <p>Given name <xsl:value-of select="/RDF/foaf:Person/foaf:givenname"/></p>
-        <p>Title <xsl:value-of select="/rdf:RDF/foaf:Personn/foaf:title"/></p>
+        <p>Title <xsl:value-of select="/rdf:RDF/foaf:Person/foaf:title"/></p>
       </body>
     </html>
   </xsl:template>
