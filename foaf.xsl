@@ -21,6 +21,7 @@
       Name <xsl:value-of select="univ:name"/>
       Age <xsl:value-of select="univ:givenname"/>
       Title <xsl:value-of select="univ:title"/>
+      Title <xsl:value-of select="univ:title"/>
     </li>
   </xsl:template>
 </xsl:stylesheet>
