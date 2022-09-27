@@ -5,16 +5,13 @@
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
   <xsl:output method="html" indent="yes"/>
 
-  <xsl:template match="/">
+  <xsl:template match="rdf:RDF/foaf:Person">
     <html>
       <body>
         <h2>Homepage</h2>
-        <ol>
-          <xsl:apply-templates select="rdf:RDF/Person" />
-        </ol>
-        <p>Name <xsl:value-of select="rdf:RDF/foaf:Person/foaf:name"/></p>
-        <p>Given name <xsl:value-of select="rdf:RDF/foaf:Person/foaf:givenname"/></p>
-        <p>Title <xsl:value-of select="rdf:RDF/foaf:Person/foaf:title"/></p>
+        <p>Name <xsl:value-of select="foaf:name"/></p>
+        <p>Given name <xsl:value-of select="foaf:givenname"/></p>
+        <p>Title <xsl:value-of select="foaf:title"/></p>
       </body>
     </html>
   </xsl:template>
