@@ -12,9 +12,9 @@
         <ol>
           <xsl:apply-templates select="/rdf:RDF/Person" />
         </ol>
-        <p>Name <xsl:value-of select="/foaf:Person/foaf:name"/></p>
-        <p>Given name <xsl:value-of select="/RDF/foaf:Person/foaf:givenname"/></p>
-        <p>Title <xsl:value-of select="/rdf:RDF/foaf:Person/foaf:title"/></p>
+        <p>Name <xsl:value-of select="/foaf:Person[rdf:ID=me]/foaf:name"/></p>
+        <p>Given name <xsl:value-of select="/RDF/foaf:Person[rdf:ID=me]/foaf:givenname"/></p>
+        <p>Title <xsl:value-of select="/rdf:RDF/foaf:Person[rdf:ID=me]/foaf:title"/></p>
       </body>
     </html>
   </xsl:template>
